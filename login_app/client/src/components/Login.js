@@ -42,8 +42,8 @@ export default function Login() {
 
 
           <div className="textbox flex flex-col items-center gap-6">
-            <input {...formik.getFieldProps ('username')}  className={styles.textbox} type="text" placeholder='Username' />
-            <input {...formik.getFieldProps ('password')}  className={styles.textbox} type="text" placeholder='Password' />
+            <input {...formik.getFieldProps ('username')}  className={styles.textbox} type="text" placeholder='Type Username' />
+            <input {...formik.getFieldProps ('password')}  className={styles.textbox} type="text" placeholder='Type Password' />
             <button  className={styles.btn} type='submit'>Let's Go </button>
           </div>
          
