@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 /**root routes */
 
 /**important all components */
-import Username from './components/Username';
+
 import Password from './components/Password';
 import Register from './components/Register';
 import Recovery from './components/Recovery';
@@ -15,6 +15,7 @@ import PageNotFound from './components/PageNotFound';
 import Profile from './components/Profile';
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
+import Login from "./components/Login";
 
 
 
@@ -22,7 +23,7 @@ import Dashboard from "./components/Dashboard";
 const router = createBrowserRouter([
     {
         path : '/',
-        element : <Username></Username>
+        element : <Login></Login>
     },
     
     {
@@ -45,11 +46,6 @@ const router = createBrowserRouter([
     {
         path : '/profile',
         element : <Profile></Profile>
-    },
-
-    {
-        path : '/sidebar',
-        element : <Sidebar></Sidebar>
     },
     {
         path : '/dashboard',
