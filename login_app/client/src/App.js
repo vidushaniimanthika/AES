@@ -16,17 +16,13 @@ import Profile from './components/Profile';
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
-import LecturesMarksPages from "./components/LecturesMarksPage";
+
 import GpaPage from "./components/GpaPage";
 
 
 
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <LecturesMarksPages></LecturesMarksPages>
-    },
     {
         path : '/',
         element : <Login></Login>
