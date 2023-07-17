@@ -24,6 +24,10 @@ import GpaPage from "./components/GpaPage";
 
 const router = createBrowserRouter([
     {
+        path: '/',
+        element : <GpaPage></GpaPage>
+    },
+    {
         path : '/',
         element : <Login></Login>
     },

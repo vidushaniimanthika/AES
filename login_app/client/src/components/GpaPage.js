@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import styles from '../styles/Gpa.module.css';
+
 
 const GPA = () => {
   const [data, setData] = useState([
