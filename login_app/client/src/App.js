@@ -16,6 +16,7 @@ import Profile from './components/Profile';
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
+import LecturesMarksPage from "./components/LecturesMarksPage";
 
 
 
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
     {
         path : '/password',
         element : <Password></Password>
+    },
+    {
+        path : '/lecturemarks',
+        element : <LecturesMarksPage></LecturesMarksPage>
     },
     {
         path : '/register',

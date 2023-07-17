@@ -11,6 +11,8 @@ font-family: 'Poppins', sans-serif;
 body{
     background: #dcdcdc;
     background-image: url('./assets/exam.jpg');
+    height: 100%;
+    width: 100%;
 }
 .side-bar{
     position: fixed;
@@ -158,3 +160,4 @@ side-bar.inactive .main-menu .menu-item span{
     bottom: 0;
     left: 0;
 } */
+
