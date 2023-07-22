@@ -18,15 +18,20 @@ import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import LecturesMarksPage from "./components/LecturesMarksPage";
 
+import GpaPage from "./components/GpaPage";
+
 
 
 
 const router = createBrowserRouter([
     {
+        path: '/',
+        element : <GpaPage></GpaPage>
+    },
+    {
         path : '/',
         element : <Login></Login>
     },
-    
     {
         path : '/password',
         element : <Password></Password>
@@ -39,7 +44,6 @@ const router = createBrowserRouter([
         path : '/register',
         element:<Register></Register>
     },
-   
     {
         path : '/recovery',
         element : <Recovery></Recovery>
@@ -56,7 +60,6 @@ const router = createBrowserRouter([
         path : '/dashboard',
         element : <Dashboard></Dashboard>
     },
-    
     {
         path : '*',
         element : <PageNotFound></PageNotFound>

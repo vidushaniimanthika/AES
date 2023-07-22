@@ -8,11 +8,12 @@ const Dropdown = () => {
   };
 
   return (
+    <div className="container mx-auto">
     <div className='flex justify-center'>
     <div className={styles.marks}>
       <h3 className='text-xl font-bold '>Year: {selectedOption}</h3>
       <div className="textbox flex flex-col gap-3">
-      <select value={selectedOption} onChange={handleSelectChange}>
+      <select value={selectedOption} onChange={handleSelectChange} className={styles.optionbox}>
         <option value="">Select an option</option>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
@@ -21,7 +22,7 @@ const Dropdown = () => {
       </div>
       <h3 className='text-xl font-bold'>Course: {selectedOption}</h3>
       <div className="textbox flex flex-col gap-3">
-      <select value={selectedOption} onChange={handleSelectChange}>
+      <select value={selectedOption} onChange={handleSelectChange} className={styles.optionbox}>
         <option value="">Select an option</option>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
@@ -30,7 +31,7 @@ const Dropdown = () => {
       </div>
       <h3 className='text-xl font-bold'>Batch: {selectedOption}</h3>
       <div className="textbox flex flex-col gap-3">
-      <select value={selectedOption} onChange={handleSelectChange}>
+      <select value={selectedOption} onChange={handleSelectChange} className={styles.optionbox}>
         <option value="">Select an option</option>
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
@@ -39,13 +40,14 @@ const Dropdown = () => {
       </div>
       <h3 className='text-xl font-bold'>Exam Type: {selectedOption}</h3>
       <div className="textbox flex flex-col gap-3">
-      <select value={selectedOption} onChange={handleSelectChange}>
+      <select value={selectedOption} onChange={handleSelectChange} className={styles.optionbox}>
         <option value="">Select an option</option>
         <option value="option1">END</option>
         <option value="option2">MID</option>
       </select><br />
       </div>
-      <button className= {styles.btn} type='submit'>Add</button>
+      <button className= {styles.btn1} type='submit'>Add</button>
+    </div>
     </div>
     </div>
   );
@@ -78,8 +80,8 @@ const Table = () => {
               <td>{row.subID}</td>
               <td>{row.marks}</td>
               <td>
-                <button>Edit</button>
-                <button>Delete</button>
+                <button className= {styles.btn2} type='submit' >Edit</button>
+                <button className= {styles.btn3} type='submit'>Delete</button>
               </td>
             </tr>
           ))}
