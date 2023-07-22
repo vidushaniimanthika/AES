@@ -61,6 +61,9 @@ const Table = () => {
   ]);
 
   return (
+    <div className="container mx-auto">
+    <div className='flex justify-center'>
+      <div className={styles.table}>
     <div>
       <table>
         <thead>
@@ -88,14 +91,21 @@ const Table = () => {
         </tbody>
       </table>
     </div>
+    </div>
+    </div>
+    </div>
   );
 };
 
 const AppOne = () => {
   return (
-    <div>
+    <div className="container mx-auto">
+    <div className='flex justify-center'>
+      <div className={styles.markspart}>
       <Dropdown />
       <Table />
+    </div>
+    </div>
     </div>
   );
 };
