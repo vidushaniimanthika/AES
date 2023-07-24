@@ -11,6 +11,9 @@ const GPA = () => {
   ]);
 
   return (
+    <div className="container mx-auto">
+    <div className='flex justify-center'>
+    <div className={styles.marks}>
     <div>
       <table>
         <thead>
@@ -32,6 +35,9 @@ const GPA = () => {
           ))}
         </tbody>
       </table>
+    </div>
+    </div>
+    </div>
     </div>
   );
 };

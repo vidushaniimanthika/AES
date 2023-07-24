@@ -1,0 +1,57 @@
+.marks{
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px #4747470b;
+    backdrop-filter: blur(7.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    @apply border-4 border-gray-50 shrink-0 h-2/4 w-[30%] rounded-3xl py-20 px-7 min-w-max;
+    position: relative;
+    transform: translate(05%, 40%);
+
+    
+    
+}
+
+.btn1{
+    @apply border bg-indigo-500 w-3/4 py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center align-middle;
+    padding: 10px;
+    position: relative;
+    transform: translate(-50%, -10%);
+   
+}
+
+.optionbox{
+    @apply border-0 px-5 py-1 rounded-xl w-[100%] shadow-sm text-lg;
+    @apply focus:outline-none;
+    padding: 2px;
+    
+}
+
+.btn2{
+    @apply border bg-green-800 w-[30%] py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center align-middle;
+    padding: 10px;
+    position: relative;
+    left: 32%;
+    transform: translate(-50%, -10%);
+   
+}
+
+.btn2:hover{
+    background-color: #052c02;
+    
+}
+.btn3{
+    @apply border bg-red-700 w-[30%] py-4 rounded-lg text-gray-50 text-xl shadow-sm text-center align-middle;
+    padding: 10px;
+    position: relative;
+    left:38%;
+    transform: translate(-50%, -10%);
+   
+}
+
+.btn3:hover{
+    background-color: #170404;
+    
+}
+
+

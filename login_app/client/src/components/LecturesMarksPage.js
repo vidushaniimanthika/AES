@@ -99,14 +99,12 @@ const Table = () => {
 
 const AppOne = () => {
   return (
-    <div className="container mx-auto">
-    <div className='flex justify-center'>
-      <div className={styles.markspart}>
+   
+      <div>
       <Dropdown />
       <Table />
     </div>
-    </div>
-    </div>
+
   );
 };
 
