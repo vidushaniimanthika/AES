@@ -18,6 +18,7 @@ import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import LecturesMarksPage from "./components/LecturesMarksPage";
 import MarksAddPage from "./components/MarksAddPage";
+import StuAdmisRequViewPage from "./components/StuAdmisRequViewPage";
 
 import GpaPage from "./components/GpaPage";
 
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
     {
         path : '/markadd',
         element : <MarksAddPage></MarksAddPage>
+    },
+    {
+        path : '/stuadmissionrequestview',
+        element : <StuAdmisRequViewPage></StuAdmisRequViewPage>
     },
     {
         path : '*',
