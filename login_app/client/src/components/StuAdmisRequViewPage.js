@@ -25,7 +25,9 @@ const StuAdmisRequViewPage = () => {
 
   return (
     <div>
-      <h2 className='text-xl font-bold '>Dropdown Example</h2>
+      <div className= {styles.topic}>
+      <h1 className='text-xl font-bold '>Student Addmission Request View Page</h1>
+      </div>
       <div className={styles.searchbar}>
       <div class="flex items-center space-x-2">
         <input
@@ -66,8 +68,8 @@ const StuAdmisRequViewPage = () => {
         </div>
       </div>
       
-       
-      <h2>Table Example</h2>
+      <div className={styles.tabledesign}>
+     
       <table>
         <thead>
           <tr>
@@ -96,6 +98,7 @@ const StuAdmisRequViewPage = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 };
