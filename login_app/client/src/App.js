@@ -14,7 +14,6 @@ import Reset from './components/Reset';
 import PageNotFound from './components/PageNotFound';
 import Profile from './components/Profile';
 import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import LecturesMarksPage from "./components/LecturesMarksPage";
 import MarksAddPage from "./components/MarksAddPage";
@@ -57,10 +56,6 @@ const router = createBrowserRouter([
     {
         path : '/profile',
         element : <Profile></Profile>
-    },
-    {
-        path : '/dashboard',
-        element : <Dashboard></Dashboard>
     },
     {
         path : '/markadd',
