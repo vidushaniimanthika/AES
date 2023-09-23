@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from '../styles/MarkAdd.module.css'
 
 const MarksAdd = () => {
   const [stuID, setStuID] = useState('');
@@ -45,41 +46,63 @@ const MarksAdd = () => {
   };
 
   return (
+    <div className="container mx-auto">
+    <div className='flex justify-center'>
+    <div className={styles.marks}>
     <div>
-      <div>
-        <label>Stu ID:</label>
-        <select value={stuID} onChange={handleStuIDChange}>
+      <div> 
+      <div className="textbox flex flex-col gap-1">
+        <label className='text-large font-bold '>Student ID:</label>
+        <div className="textbox flex flex-col gap-3">
+        <select value={stuID} onChange={handleStuIDChange} className={styles.optionbox}>
           <option value="">Select an option</option>
           <option value="option1">Option 1</option>
           <option value="option2">Option 2</option>
           <option value="option3">Option 3</option>
         </select>
+        </div>
       </div>
       <div>
-        <label>Sub Name:</label>
-        <select value={subName} onChange={handleSubNameChange}>
+        </div>
+        <div className="textbox flex flex-col gap-1">
+        <label className='text-large font-bold '>Subject Name:</label>
+        <div className="textbox flex flex-col gap-3">
+        <select value={subName} onChange={handleSubNameChange} className={styles.optionbox} >
           <option value="">Select an option</option>
           <option value="option1">Option 1</option>
           <option value="option2">Option 2</option>
           <option value="option3">Option 3</option>
         </select>
+        </div>
+      </div>
       </div>
       <div>
-        <label>Sub ID:</label>
-        <select value={subID} onChange={handleSubIDChange}>
+      <div className="textbox flex flex-col gap-1">
+        <label className='text-large font-bold '>Subject ID:</label>
+        <div className="textbox flex flex-col gap-3">
+        <select value={subID} onChange={handleSubIDChange} className={styles.optionbox}>
           <option value="">Select an option</option>
           <option value="option1">Option 1</option>
           <option value="option2">Option 2</option>
           <option value="option3">Option 3</option>
         </select>
+        </div>
+        </div>
       </div>
       <div>
-        <label>Marks:</label>
-        <input type="number" value={marks} onChange={handleMarksChange} />
+      <div className="textbox flex flex-col gap-1">
+        <label className='text-large font-bold '>Marks:</label>
+        <div className="textbox flex flex-col gap-3">
+        <input type="number" value={marks} onChange={handleMarksChange} className={styles.optionbox} />
+      </div>
+      </div>
       </div>
       <br />
-      <button onClick={handleCancel}>Cancel</button>
-      <button onClick={handleSubmit}>Submit</button>
+      <button className= {styles.btn2} onClick={handleSubmit}>Submit</button>
+      <button className= {styles.btn3}  onClick={handleCancel}>Cancel</button>
+    </div>
+    </div>
+    </div>
     </div>
   );
 };
