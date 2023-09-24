@@ -50,7 +50,7 @@ const Footer = () => {
                         {Data.contactAddress.map(item =>{
                             return (
                                 <div key={item.id} className='flex justify-between text-center'>
-                                    <h3 className='text-black px-6 space-y-2 pt-3 text-clip justify-center'>{item.title}</h3>
+                                    <h3 className='text-black px-6 space-y-2 pt-3 text-clip justify-center h-5'>{item.title}</h3>
                                     </div>
                             )
                         })}
@@ -80,4 +80,4 @@ const Footer = () => {
   )
 }
 
-export default Foote
+export default Footer
