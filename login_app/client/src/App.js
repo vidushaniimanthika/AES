@@ -21,6 +21,9 @@ import StuAdmisRequViewPage from "./components/StuAdmisRequViewPage";
 
 import GpaPage from "./components/GpaPage";
 
+import Footer from "./components/Footer";
+
+
 
 
 
@@ -64,6 +67,10 @@ const router = createBrowserRouter([
     {
         path : '/stuadmissionrequestview',
         element : <StuAdmisRequViewPage></StuAdmisRequViewPage>
+    },
+    {
+        path : '/footerbar',
+        element : <Footer></Footer>
     },
     {
         path : '*',
